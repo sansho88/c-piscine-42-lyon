@@ -1,18 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgriffit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/05 22:17:00 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/08/08 14:17:43 by tgriffit         ###   ########lyon.fr   */
+/*   Created: 2021/08/08 14:23:12 by tgriffit          #+#    #+#             */
+/*   Updated: 2021/08/08 16:29:10 by tgriffit         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
 #include <stdio.h>
 
-void	ft_ft(int *nbr)
+void	ft_ultimate_div_mod(int *a, int *b)
 {
-	*nbr = 42;
+	int	res;
+	int	mod;
+
+	res = *a / *b;
+	mod = *a % *b;
+	*a = res;
+	*b = mod;
 }

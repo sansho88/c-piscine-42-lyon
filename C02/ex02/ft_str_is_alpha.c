@@ -1,18 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgriffit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/05 22:17:00 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/08/08 14:17:43 by tgriffit         ###   ########lyon.fr   */
+/*   Created: 2021/08/09 13:39:16 by tgriffit          #+#    #+#             */
+/*   Updated: 2021/08/09 13:55:03 by tgriffit         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
-#include <stdio.h>
 
-void	ft_ft(int *nbr)
+int	ft_str_is_alpha(char *str)
 {
-	*nbr = 42;
+	int	i;
+	int	is_alpha;
+
+	i = 0;
+	while (str[i])
+	{
+		if ((str[i] < 'a' || str[i] > 'z') && (str[i] < 'A' || str[i] > 'Z'))
+			return (0);
+		i++;
+	}
+	return (1);
 }

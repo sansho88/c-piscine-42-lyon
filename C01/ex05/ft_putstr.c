@@ -1,18 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgriffit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/05 22:17:00 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/08/08 14:17:43 by tgriffit         ###   ########lyon.fr   */
+/*   Created: 2021/08/08 15:25:41 by tgriffit          #+#    #+#             */
+/*   Updated: 2021/08/08 15:57:47 by tgriffit         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
-#include <stdio.h>
 
-void	ft_ft(int *nbr)
+#include <unistd.h>
+void	ft_putstr(char *str)
 {
-	*nbr = 42;
+	int	i;
+
+	i = 0;
+	while (str[i])
+	{
+		write(1, &str[i++], 1);
+	}
 }

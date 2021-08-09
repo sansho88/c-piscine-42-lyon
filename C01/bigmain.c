@@ -1,18 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   bigmain.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgriffit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/05 22:17:00 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/08/08 14:17:43 by tgriffit         ###   ########lyon.fr   */
+/*   Created: 2021/08/08 14:31:50 by tgriffit          #+#    #+#             */
+/*   Updated: 2021/08/08 15:22:56 by tgriffit         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
-#include <stdio.h>
 
-void	ft_ft(int *nbr)
+#include "bigheader.h"
+
+int	main(void)
 {
-	*nbr = 42;
+	int a = 12, b = 8;
+	int	*ptra = &a;
+	int	*ptrb = &b;
+
+	ft_ultimate_div_mod(ptra, ptrb);
+	printf("a: %d, b: %d \n", a,b);
 }

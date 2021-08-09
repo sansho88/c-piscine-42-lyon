@@ -1,18 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgriffit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/05 22:17:00 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/08/08 14:17:43 by tgriffit         ###   ########lyon.fr   */
+/*   Created: 2021/08/09 10:11:35 by tgriffit          #+#    #+#             */
+/*   Updated: 2021/08/09 11:18:17 by tgriffit         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
-#include <stdio.h>
 
-void	ft_ft(int *nbr)
+char	*ft_strcpy(char *dest, char *src)
 {
-	*nbr = 42;
+	int	i;
+
+	i = 0;
+	while (src[i])
+	{
+		src[i] = dest[i];
+		i++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }
