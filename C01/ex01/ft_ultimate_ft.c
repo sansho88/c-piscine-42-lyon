@@ -6,14 +6,11 @@
 /*   By: tgriffit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/05 22:37:34 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/08/07 19:13:32 by tgriffit         ###   ########lyon.fr   */
+/*   Updated: 2021/08/09 13:36:39 by tgriffit         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
-#include <stdio.h>
 
 void	ft_ultimate_ft(int *********nbr)
 {
 	*********nbr = 42;
-	printf("%d", *********nbr);
 }

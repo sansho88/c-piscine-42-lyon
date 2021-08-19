@@ -6,14 +6,13 @@
 /*   By: tgriffit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 13:39:16 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/08/09 13:55:03 by tgriffit         ###   ########lyon.fr   */
+/*   Updated: 2021/08/11 12:29:15 by tgriffit         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_str_is_alpha(char *str)
 {
 	int	i;
-	int	is_alpha;
 
 	i = 0;
 	while (str[i])

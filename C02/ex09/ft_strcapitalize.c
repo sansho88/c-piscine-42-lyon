@@ -6,63 +6,70 @@
 /*   By: tgriffit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 18:08:20 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/08/09 21:13:15 by tgriffit         ###   ########lyon.fr   */
+/*   Updated: 2021/08/12 15:56:37 by tgriffit         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*if isLowCase
- * if  */
-int	is_alpha(char *str)
+int	is_numeric(char str)
 {
-	int	i;
-	int	is_alpha;
+	if (str >= '0' && str <= '9')
+		return (1);
+	return (0);
+}
 
-	i = 0;
-	while (str[i])
-	{
-		if ((str[i] < 'a' || str[i] > 'z') && (str[i] < 'A' || str[i] > 'Z'))
-			return (0);
-		i++;
-	}
+int	is_uppercase(char str)
+{
+	if (str >= 'A' && str <= 'Z')
+		return (1);
+	return (0);
+}
+
+int	is_lowercase(char str)
+{
+	if (!(str >= 'a' && str <= 'z'))
+		return (0);
 	return (1);
 }
-//TODO: is_alphanumeric (=letters + numbers)
-int	is_lowercase(char *str)
-{
-	int	i;
 
-	i = 0;
-	while (str[i])
-	{
-		if (!(str[i] >= 'a' && str[i] <= 'z'))
-			return (0);
-		i++;
-	}
-	return (1);
+int	is_alphanumeric(char str)
+{
+	if ((is_lowercase(str) || is_uppercase(str)))
+		return (1);
+	return (0);
 }
 
 char	*ft_strcapitalize(char *str)
 {
-	int i;
+    int	i;
 
-	i = 0;
-	while (str[i])
-	{
-		if (is_alphanumeric(str[i])
-		{
-			if(is_lowercase(str[i]))
-			{
-				str[i] -=32;
-			}
-			i++;
-			while(is_alphanumeric(str[i])
-			{
-				if(is_uppercase(str[i])
-				{
-					str[i] +=32;
-				}
-			}
-		i++;
-	}
+    i = 0;
+    while (str[i])
+    {
+        if (is_alphanumeric(str[i]))
+        {
+            if (is_lowercase(str[i]) && !is_numeric(str[i - 1]))
+            {
+                str[i] -= 32;
+            }
+            i++;
+            while (is_alphanumeric(str[i]))
+            {
+                if (is_uppercase(str[i]) || is_numeric(str[i - 1]))
+                {
+                    str[i] += 32;
+                }
+                i++;
+            }
+        }
+        i++;
+    }
+    return (str);
 }
+#include <stdio.h>
+int main(int argc, char **argv)
+{
+    char str[] = "salut, commEnt tu vas ? 42Mots quaRantE-deuX; cinquante+et+un";
+    printf("%s\n", str);
+    printf("%s\n", ft_strcapitalize(str));
 
+    return (0);
+}

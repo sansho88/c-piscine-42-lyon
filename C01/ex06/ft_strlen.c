@@ -6,7 +6,7 @@
 /*   By: tgriffit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/08 16:00:39 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/08/08 16:07:37 by tgriffit         ###   ########lyon.fr   */
+/*   Updated: 2021/08/12 11:56:54 by tgriffit         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@ int	ft_strlen(char *str)
 	int	i;
 
 	i = 0;
-	while (str[i++])
-		;
+	while (str[i])
+		i++;
 	return (i);
 }

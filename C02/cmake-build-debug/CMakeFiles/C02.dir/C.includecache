@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/tgriffit/projects/C02/ex09/ft_strcapitalize.c
+stdio.h
+-
+
+/Users/tgriffit/projects/C02/ex11/ft_putstr_non_printable.c
+unistd.h
+-
+

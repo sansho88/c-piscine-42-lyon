@@ -6,7 +6,7 @@
 /*   By: tgriffit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 10:11:35 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/08/09 11:18:17 by tgriffit         ###   ########lyon.fr   */
+/*   Updated: 2021/08/12 16:11:02 by tgriffit         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strcpy(char *dest, char *src)
 	i = 0;
 	while (src[i])
 	{
-		src[i] = dest[i];
+		dest[i] = src[i];
 		i++;
 	}
 	dest[i] = '\0';

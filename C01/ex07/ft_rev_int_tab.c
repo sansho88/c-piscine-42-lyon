@@ -6,7 +6,7 @@
 /*   By: tgriffit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/08 18:05:25 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/08/08 20:29:38 by tgriffit         ###   ########lyon.fr   */
+/*   Updated: 2021/08/11 12:42:53 by tgriffit         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 void	ft_swap(int *a, int *b)
@@ -27,6 +27,8 @@ void	ft_rev_int_tab(int *tab, int size)
 	j = size - 1;
 	while (i < j)
 	{
-		ft_swap(tab[i], tab[j]);
+		ft_swap(&tab[i], &tab[j]);
+		i++;
+		j--;
 	}
 }
