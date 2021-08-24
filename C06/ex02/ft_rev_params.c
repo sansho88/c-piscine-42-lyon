@@ -6,7 +6,7 @@
 /*   By: tgriffit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/17 17:04:38 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/08/18 23:36:41 by tgriffit         ###   ########lyon.fr   */
+/*   Updated: 2021/08/23 17:23:26 by tgriffit         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_strlen(char	*str)
 
 int	main(int argc, char **argv)
 {
-	while (argc > 0)
+	while (argc > 1)
 	{
 		write(1, argv[argc - 1], ft_strlen(argv[argc - 1]));
 		write(1, "\n", 1);

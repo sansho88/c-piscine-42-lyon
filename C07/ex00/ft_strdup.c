@@ -10,25 +10,24 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
-int ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
-  int i;
+	int	i;
 
-  i = 0;
-  while(str[i])
-    i++;
-
-  return (i);
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
 }
 
-char    *ft_strdup(char *src)
+char	*ft_strdup(char *src)
 {
-    char    *cpy;
+	char	*cpy;
 	int		i;
 
 	i = 0;
-    cpy = malloc(sizeof(char) * ft_strlen(src) + 1);
-    if (!cpy)
+	cpy = malloc(sizeof(char) * ft_strlen(src) + 1);
+	if (!cpy)
 		return (0);
 	while (i < ft_strlen(src))
 	{
@@ -36,5 +35,5 @@ char    *ft_strdup(char *src)
 		i++;
 	}
 	cpy[i] = '\0';
-    return (cpy);
+	return (cpy);
 }

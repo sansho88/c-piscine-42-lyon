@@ -6,7 +6,7 @@
 /*   By: tgriffit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/19 15:35:00 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/08/19 16:33:17 by tgriffit         ###   ########lyon.fr   */
+/*   Updated: 2021/08/23 23:01:22 by tgriffit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
@@ -19,7 +19,10 @@ int	ft_ultimate_range(int **range, int min, int max)
 	i = 0;
 	sizerange = max - min;
 	if (sizerange <= 0)
-	   return (0);
+	{
+		*range = NULL;
+		return (0);
+	}
 	*range = malloc(sizeof(int) * sizerange);
 	if (!*range)
 		return (-1);
@@ -29,13 +32,4 @@ int	ft_ultimate_range(int **range, int min, int max)
 		i++;
 	}
 	return (sizerange);
-}
-
-int main()
-{
-	int    res;
-	int **range;
-
-	res = ft_ultimate_range(range,-5, 8);
-	return (0);
 }
