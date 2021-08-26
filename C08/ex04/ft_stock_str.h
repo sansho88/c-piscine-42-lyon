@@ -1,27 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_boolean.h                                       :+:      :+:    :+:   */
+/*   ft_stock_str.h                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgriffit <tgriffit@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/24 12:18:45 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/08/25 11:28:56 by tgriffit         ###   ########.fr       */
+/*   Created: 2021/08/25 11:58:45 by tgriffit          #+#    #+#             */
+/*   Updated: 2021/08/25 23:05:39 by tgriffit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_BOOLEAN_H
-# define FT_BOOLEAN_H
-# include <unistd.h>
-# define EVEN(nbr) (nbr % 2 == 0)
-# define EVEN_MSG "I have an even number of arguments.\n"
-# define ODD_MSG "I have an odd number of arguments.\n"
-# define SUCCESS 0
-enum e_bool {
-	FALSE,
-	TRUE
-};
-typedef enum e_bool	t_bool;
-void		ft_putstr(char *str);
-t_bool		ft_is_even(int nbr);
+#ifndef FT_STOCK_STR_H
+# define FT_STOCK_STR_H
+# include <stdlib.h>
+typedef struct s_stock_str
+{
+	int size;
+	char *str;
+	char *copy;
+}t_stock_str;
+struct s_stock_str *ft_strs_to_tab(int ac, char **av);
+int	ft_strlen(char *str);
 #endif
