@@ -6,7 +6,7 @@
 /*   By: tgriffit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 18:08:20 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/08/26 17:59:31 by tgriffit         ###   ########.fr       */
+/*   Updated: 2021/08/12 15:56:37 by tgriffit         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 int	is_numeric(char str)
@@ -39,28 +39,37 @@ int	is_alphanumeric(char str)
 
 char	*ft_strcapitalize(char *str)
 {
-	int	i;
+    int	i;
 
-	i = 0;
-	while (str[i])
-	{
-		if (is_uppercase(str[i]))
-			str[i] += 32;
-		i++;
-	}
-	i = 0;
-	while (str[i])
-	{
-		if (is_lowercase(str[i]) && (!is_numeric(str[i - 1])
-				|| str[i - 1] == ' '))
-			str[i] -= 32;
-		while (is_alphanumeric(str[i]))
-		{
-			i++;
-			if (is_numeric(str[i - 1]))
-				str[i] += 32;
-		}
-		i++;
-	}
-	return (str);
+    i = 0;
+    while (str[i])
+    {
+        if (is_alphanumeric(str[i]))
+        {
+            if (is_lowercase(str[i]) && !is_numeric(str[i - 1]))
+            {
+                str[i] -= 32;
+            }
+            i++;
+            while (is_alphanumeric(str[i]))
+            {
+                if (is_uppercase(str[i]) || is_numeric(str[i - 1]))
+                {
+                    str[i] += 32;
+                }
+                i++;
+            }
+        }
+        i++;
+    }
+    return (str);
+}
+#include <stdio.h>
+int main(int argc, char **argv)
+{
+    char str[] = "salut, commEnt tu vas ? 42Mots quaRantE-deuX; cinquante+et+un";
+    printf("%s\n", str);
+    printf("%s\n", ft_strcapitalize(str));
+
+    return (0);
 }

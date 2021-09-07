@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/tgriffit/projects/C02/ex10/ft_strlcpy.c" "/Users/tgriffit/projects/C02/cmake-build-debug/CMakeFiles/C02.dir/ex10/ft_strlcpy.c.o"
+  "/Users/tgriffit/projects/C02/ex09/ft_strcapitalize.c" "/Users/tgriffit/projects/C02/cmake-build-debug/CMakeFiles/C02.dir/ex09/ft_strcapitalize.c.o"
+  "/Users/tgriffit/projects/C02/ex11/ft_putstr_non_printable.c" "/Users/tgriffit/projects/C02/cmake-build-debug/CMakeFiles/C02.dir/ex11/ft_putstr_non_printable.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

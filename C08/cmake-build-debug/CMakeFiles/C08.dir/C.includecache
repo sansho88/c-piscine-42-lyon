@@ -14,15 +14,3 @@ unistd.h
 ft_boolean.h
 /Users/tgriffit/projects/C08/ex01/ft_boolean.h
 
-/Users/tgriffit/projects/C08/ex04/ft_stock_str.h
-stdlib.h
--
-
-/Users/tgriffit/projects/C08/ex05/ft_show_tab.c
-../ex04/ft_stock_str.h
-/Users/tgriffit/projects/C08/ex04/ft_stock_str.h
-unistd.h
--
-printf.h
-/Users/tgriffit/projects/C08/ex05/printf.h
-

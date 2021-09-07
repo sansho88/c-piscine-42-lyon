@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n000bgn4002vx9/T/AppTranslocation/A5562112-DF92-425B-8F6B-C4E72490A400/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n000bgn4002vx9/T/AppTranslocation/F86E2541-69DC-44A1-959A-B0C74C181644/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n000bgn4002vx9/T/AppTranslocation/A5562112-DF92-425B-8F6B-C4E72490A400/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n000bgn4002vx9/T/AppTranslocation/F86E2541-69DC-44A1-959A-B0C74C181644/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/tgriffit/projects/C02/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n000bgn4002vx9/T/AppTranslocation/A5562112-DF92-425B-8F6B-C4E72490A400/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n000bgn4002vx9/T/AppTranslocation/F86E2541-69DC-44A1-959A-B0C74C181644/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -78,7 +78,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n000bgn4002vx9/T/AppTranslocation/A5562112-DF92-425B-8F6B-C4E72490A400/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n000bgn4002vx9/T/AppTranslocation/F86E2541-69DC-44A1-959A-B0C74C181644/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -129,29 +129,53 @@ C02/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/C02.dir/build.make CMakeFiles/C02.dir/build
 .PHONY : C02/fast
 
-ex10/ft_strlcpy.o: ex10/ft_strlcpy.c.o
-.PHONY : ex10/ft_strlcpy.o
+ex09/ft_strcapitalize.o: ex09/ft_strcapitalize.c.o
+.PHONY : ex09/ft_strcapitalize.o
 
 # target to build an object file
-ex10/ft_strlcpy.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C02.dir/build.make CMakeFiles/C02.dir/ex10/ft_strlcpy.c.o
-.PHONY : ex10/ft_strlcpy.c.o
+ex09/ft_strcapitalize.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/C02.dir/build.make CMakeFiles/C02.dir/ex09/ft_strcapitalize.c.o
+.PHONY : ex09/ft_strcapitalize.c.o
 
-ex10/ft_strlcpy.i: ex10/ft_strlcpy.c.i
-.PHONY : ex10/ft_strlcpy.i
+ex09/ft_strcapitalize.i: ex09/ft_strcapitalize.c.i
+.PHONY : ex09/ft_strcapitalize.i
 
 # target to preprocess a source file
-ex10/ft_strlcpy.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C02.dir/build.make CMakeFiles/C02.dir/ex10/ft_strlcpy.c.i
-.PHONY : ex10/ft_strlcpy.c.i
+ex09/ft_strcapitalize.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/C02.dir/build.make CMakeFiles/C02.dir/ex09/ft_strcapitalize.c.i
+.PHONY : ex09/ft_strcapitalize.c.i
 
-ex10/ft_strlcpy.s: ex10/ft_strlcpy.c.s
-.PHONY : ex10/ft_strlcpy.s
+ex09/ft_strcapitalize.s: ex09/ft_strcapitalize.c.s
+.PHONY : ex09/ft_strcapitalize.s
 
 # target to generate assembly for a file
-ex10/ft_strlcpy.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C02.dir/build.make CMakeFiles/C02.dir/ex10/ft_strlcpy.c.s
-.PHONY : ex10/ft_strlcpy.c.s
+ex09/ft_strcapitalize.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/C02.dir/build.make CMakeFiles/C02.dir/ex09/ft_strcapitalize.c.s
+.PHONY : ex09/ft_strcapitalize.c.s
+
+ex11/ft_putstr_non_printable.o: ex11/ft_putstr_non_printable.c.o
+.PHONY : ex11/ft_putstr_non_printable.o
+
+# target to build an object file
+ex11/ft_putstr_non_printable.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/C02.dir/build.make CMakeFiles/C02.dir/ex11/ft_putstr_non_printable.c.o
+.PHONY : ex11/ft_putstr_non_printable.c.o
+
+ex11/ft_putstr_non_printable.i: ex11/ft_putstr_non_printable.c.i
+.PHONY : ex11/ft_putstr_non_printable.i
+
+# target to preprocess a source file
+ex11/ft_putstr_non_printable.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/C02.dir/build.make CMakeFiles/C02.dir/ex11/ft_putstr_non_printable.c.i
+.PHONY : ex11/ft_putstr_non_printable.c.i
+
+ex11/ft_putstr_non_printable.s: ex11/ft_putstr_non_printable.c.s
+.PHONY : ex11/ft_putstr_non_printable.s
+
+# target to generate assembly for a file
+ex11/ft_putstr_non_printable.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/C02.dir/build.make CMakeFiles/C02.dir/ex11/ft_putstr_non_printable.c.s
+.PHONY : ex11/ft_putstr_non_printable.c.s
 
 # Help Target
 help:
@@ -162,9 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... C02"
-	@echo "... ex10/ft_strlcpy.o"
-	@echo "... ex10/ft_strlcpy.i"
-	@echo "... ex10/ft_strlcpy.s"
+	@echo "... ex09/ft_strcapitalize.o"
+	@echo "... ex09/ft_strcapitalize.i"
+	@echo "... ex09/ft_strcapitalize.s"
+	@echo "... ex11/ft_putstr_non_printable.o"
+	@echo "... ex11/ft_putstr_non_printable.i"
+	@echo "... ex11/ft_putstr_non_printable.s"
 .PHONY : help
 
 

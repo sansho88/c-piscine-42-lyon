@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/tgriffit/projects/C01/ex06/ft_strlen.c" "/Users/tgriffit/projects/C01/cmake-build-debug/CMakeFiles/C01.dir/ex06/ft_strlen.c.o"
+  "/Users/tgriffit/projects/C01/ex07/ft_rev_int_tab.c" "/Users/tgriffit/projects/C01/cmake-build-debug/CMakeFiles/C01.dir/ex07/ft_rev_int_tab.c.o"
   "/Users/tgriffit/projects/C01/ex08/ft_sort_int_tab.c" "/Users/tgriffit/projects/C01/cmake-build-debug/CMakeFiles/C01.dir/ex08/ft_sort_int_tab.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

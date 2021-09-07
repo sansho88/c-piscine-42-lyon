@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/tgriffit/projects/C02/ex10/ft_strlcpy.c
-printf.h
-/Users/tgriffit/projects/C02/ex10/printf.h
+/Users/tgriffit/projects/C02/ex09/ft_strcapitalize.c
+stdio.h
+-
+
+/Users/tgriffit/projects/C02/ex11/ft_putstr_non_printable.c
+unistd.h
+-
 

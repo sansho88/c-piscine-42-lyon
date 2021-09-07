@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n000bgn4002vx9/T/AppTranslocation/1B600FCB-C8F2-40A9-A8B1-DB613AD1FAD5/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n000bgn4002vx9/T/AppTranslocation/4E263B82-4412-4F4F-A49B-F3B1E7406937/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n000bgn4002vx9/T/AppTranslocation/1B600FCB-C8F2-40A9-A8B1-DB613AD1FAD5/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n000bgn4002vx9/T/AppTranslocation/4E263B82-4412-4F4F-A49B-F3B1E7406937/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/tgriffit/projects/C01/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n000bgn4002vx9/T/AppTranslocation/1B600FCB-C8F2-40A9-A8B1-DB613AD1FAD5/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n000bgn4002vx9/T/AppTranslocation/4E263B82-4412-4F4F-A49B-F3B1E7406937/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -78,7 +78,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n000bgn4002vx9/T/AppTranslocation/1B600FCB-C8F2-40A9-A8B1-DB613AD1FAD5/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n000bgn4002vx9/T/AppTranslocation/4E263B82-4412-4F4F-A49B-F3B1E7406937/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -129,6 +129,54 @@ C01/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/C01.dir/build.make CMakeFiles/C01.dir/build
 .PHONY : C01/fast
 
+ex06/ft_strlen.o: ex06/ft_strlen.c.o
+.PHONY : ex06/ft_strlen.o
+
+# target to build an object file
+ex06/ft_strlen.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/C01.dir/build.make CMakeFiles/C01.dir/ex06/ft_strlen.c.o
+.PHONY : ex06/ft_strlen.c.o
+
+ex06/ft_strlen.i: ex06/ft_strlen.c.i
+.PHONY : ex06/ft_strlen.i
+
+# target to preprocess a source file
+ex06/ft_strlen.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/C01.dir/build.make CMakeFiles/C01.dir/ex06/ft_strlen.c.i
+.PHONY : ex06/ft_strlen.c.i
+
+ex06/ft_strlen.s: ex06/ft_strlen.c.s
+.PHONY : ex06/ft_strlen.s
+
+# target to generate assembly for a file
+ex06/ft_strlen.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/C01.dir/build.make CMakeFiles/C01.dir/ex06/ft_strlen.c.s
+.PHONY : ex06/ft_strlen.c.s
+
+ex07/ft_rev_int_tab.o: ex07/ft_rev_int_tab.c.o
+.PHONY : ex07/ft_rev_int_tab.o
+
+# target to build an object file
+ex07/ft_rev_int_tab.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/C01.dir/build.make CMakeFiles/C01.dir/ex07/ft_rev_int_tab.c.o
+.PHONY : ex07/ft_rev_int_tab.c.o
+
+ex07/ft_rev_int_tab.i: ex07/ft_rev_int_tab.c.i
+.PHONY : ex07/ft_rev_int_tab.i
+
+# target to preprocess a source file
+ex07/ft_rev_int_tab.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/C01.dir/build.make CMakeFiles/C01.dir/ex07/ft_rev_int_tab.c.i
+.PHONY : ex07/ft_rev_int_tab.c.i
+
+ex07/ft_rev_int_tab.s: ex07/ft_rev_int_tab.c.s
+.PHONY : ex07/ft_rev_int_tab.s
+
+# target to generate assembly for a file
+ex07/ft_rev_int_tab.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/C01.dir/build.make CMakeFiles/C01.dir/ex07/ft_rev_int_tab.c.s
+.PHONY : ex07/ft_rev_int_tab.c.s
+
 ex08/ft_sort_int_tab.o: ex08/ft_sort_int_tab.c.o
 .PHONY : ex08/ft_sort_int_tab.o
 
@@ -162,6 +210,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... C01"
+	@echo "... ex06/ft_strlen.o"
+	@echo "... ex06/ft_strlen.i"
+	@echo "... ex06/ft_strlen.s"
+	@echo "... ex07/ft_rev_int_tab.o"
+	@echo "... ex07/ft_rev_int_tab.i"
+	@echo "... ex07/ft_rev_int_tab.s"
 	@echo "... ex08/ft_sort_int_tab.o"
 	@echo "... ex08/ft_sort_int_tab.i"
 	@echo "... ex08/ft_sort_int_tab.s"
