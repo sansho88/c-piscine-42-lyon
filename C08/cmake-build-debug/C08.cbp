@@ -46,6 +46,8 @@
 				<Compiler>
 					<Add directory="/Users/tgriffit/projects/C08/ex00"/>
 					<Add directory="/Users/tgriffit/projects/C08/ex01"/>
+					<Add directory="/Users/tgriffit/projects/C08/ex04"/>
+					<Add directory="/Users/tgriffit/projects/C08/ex05"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -68,6 +70,8 @@
 				<Compiler>
 					<Add directory="/Users/tgriffit/projects/C08/ex00"/>
 					<Add directory="/Users/tgriffit/projects/C08/ex01"/>
+					<Add directory="/Users/tgriffit/projects/C08/ex04"/>
+					<Add directory="/Users/tgriffit/projects/C08/ex05"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -82,13 +86,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/tgriffit/projects/C08/ex00/ft.h">
-			<Option target="C08"/>
-		</Unit>
-		<Unit filename="/Users/tgriffit/projects/C08/ex01/ft_boolean.h">
-			<Option target="C08"/>
-		</Unit>
 		<Unit filename="/Users/tgriffit/projects/C08/ex01/maintest.c">
+			<Option target="C08"/>
+		</Unit>
+		<Unit filename="/Users/tgriffit/projects/C08/ex04/ft_stock_str.h">
+			<Option target="C08"/>
+		</Unit>
+		<Unit filename="/Users/tgriffit/projects/C08/ex05/ft_show_tab.c">
 			<Option target="C08"/>
 		</Unit>
 		<Unit filename="/Users/tgriffit/projects/C08/CMakeLists.txt">

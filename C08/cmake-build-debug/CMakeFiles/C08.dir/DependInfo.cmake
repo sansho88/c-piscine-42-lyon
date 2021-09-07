@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/tgriffit/projects/C08/ex01/maintest.c" "/Users/tgriffit/projects/C08/cmake-build-debug/CMakeFiles/C08.dir/ex01/maintest.c.o"
+  "/Users/tgriffit/projects/C08/ex05/ft_show_tab.c" "/Users/tgriffit/projects/C08/cmake-build-debug/CMakeFiles/C08.dir/ex05/ft_show_tab.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
@@ -16,6 +17,8 @@ set(CMAKE_C_COMPILER_ID "AppleClang")
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "../ex00"
   "../ex01"
+  "../ex04"
+  "../ex05"
   )
 
 # The set of dependency files which are needed:

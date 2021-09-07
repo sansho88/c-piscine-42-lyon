@@ -6,7 +6,7 @@
 /*   By: tgriffit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/19 21:29:06 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/08/24 15:20:58 by tgriffit         ###   ########.fr       */
+/*   Updated: 2021/08/25 14:55:22 by tgriffit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
@@ -51,32 +51,35 @@ void	ft_strcat(char *s1, char const *s2)
 	size1 = 0;
 	size2 = 0;
 	while (s1[size1])
-	{
 		size1++;
-	}
 	while (s2[size2])
 	{
-		s1[size1] = s2[size2];
-		size1++;
+		s1[size1 + size2] = s2[size2];
 		size2++;
 	}
-	s1[size1] = '\0';
+	s1[size1 + size2] = '\0';
 }
 
 /* @sizestrs = total of chars in all strs, useful for malloc */
 char	*ft_strjoin(int size, char **strs, char *sep)
 {
-	int		sizestrs;
 	char	*result;
 	int		i;
 
 	i = 0;
-	sizestrs = ft_tabslen(strs, size);
 	if (size <= 0)
-		return ("");
-	result = malloc(sizeof(char) * (sizestrs + ft_strlen(sep) + 1));
+	{
+		result = malloc(1);
+		if (!result)
+			return (0);
+		result = "\0";
+		return (result);
+	}
+	result = malloc(sizeof(char) * (ft_tabslen(strs, size)
+				+ (ft_strlen(sep) * (size - 1) + 100)));
 	if (!result)
 		return (0);
+	result[0] = '\0';
 	while (i < size)
 	{
 		ft_strcat(result, strs[i]);

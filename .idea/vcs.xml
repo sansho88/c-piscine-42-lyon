@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/C00" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/C01" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/C02" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/C03" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/C04" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/C05" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/C06" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/C07" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/C08" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Rush00" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Rush00-b" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Rush01" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Rush02" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Rush02/git@vogsphere-v2.42lyon.fr:vogsphere/intra-uuid-9284cfd2-2b51-488c-9fc3-3814b539ee34-3736488" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/oldC00" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/shell00" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/shell00/ex00" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/shell00/testPush/intra-uuid-9ffab39f-5a84-412e-8243-254a297002f7-3691886" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/shell00/testPush/test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/shell00/testPush/test/intra-uuid-9ffab39f-5a84-412e-8243-254a297002f7-3691886" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/shell00bis" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/shell01bis" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/shell01ter" vcs="Git" />
+  </component>
+</project>

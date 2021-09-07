@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
   "C02"
   "C02.pdb"
-  "CMakeFiles/C02.dir/ex09/ft_strcapitalize.c.o"
-  "CMakeFiles/C02.dir/ex11/ft_putstr_non_printable.c.o"
+  "CMakeFiles/C02.dir/ex10/ft_strlcpy.c.o"
 )
 
 # Per-language clean rules from dependency scanning.

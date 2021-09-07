@@ -4,3 +4,6 @@
 CMakeFiles/C08.dir/ex01/maintest.c.o: \
  ../ex01/ft_boolean.h \
  ../ex01/maintest.c
+CMakeFiles/C08.dir/ex05/ft_show_tab.c.o: \
+ ../ex04/ft_stock_str.h \
+ ../ex05/ft_show_tab.c

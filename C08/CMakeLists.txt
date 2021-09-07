@@ -5,8 +5,10 @@ set(CMAKE_C_STANDARD 11)
 
 include_directories(ex00)
 include_directories(ex01)
+include_directories(ex04)
+include_directories(ex05)
 
 add_executable(C08
-        ex00/ft.h
-        ex01/ft_boolean.h
-        ex01/maintest.c)
+        ex01/maintest.c
+        ex04/ft_stock_str.h
+        ex05/ft_show_tab.c)

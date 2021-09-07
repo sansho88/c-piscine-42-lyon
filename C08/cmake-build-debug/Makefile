@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n000bgn4002vx9/T/AppTranslocation/E524978B-3183-47AD-A6A2-D2906EEEC55F/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n000bgn4002vx9/T/AppTranslocation/1B600FCB-C8F2-40A9-A8B1-DB613AD1FAD5/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n000bgn4002vx9/T/AppTranslocation/E524978B-3183-47AD-A6A2-D2906EEEC55F/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n000bgn4002vx9/T/AppTranslocation/1B600FCB-C8F2-40A9-A8B1-DB613AD1FAD5/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/tgriffit/projects/C08/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n000bgn4002vx9/T/AppTranslocation/E524978B-3183-47AD-A6A2-D2906EEEC55F/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n000bgn4002vx9/T/AppTranslocation/1B600FCB-C8F2-40A9-A8B1-DB613AD1FAD5/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -78,7 +78,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n000bgn4002vx9/T/AppTranslocation/E524978B-3183-47AD-A6A2-D2906EEEC55F/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n000bgn4002vx9/T/AppTranslocation/1B600FCB-C8F2-40A9-A8B1-DB613AD1FAD5/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -153,6 +153,30 @@ ex01/maintest.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/C08.dir/build.make CMakeFiles/C08.dir/ex01/maintest.c.s
 .PHONY : ex01/maintest.c.s
 
+ex05/ft_show_tab.o: ex05/ft_show_tab.c.o
+.PHONY : ex05/ft_show_tab.o
+
+# target to build an object file
+ex05/ft_show_tab.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/C08.dir/build.make CMakeFiles/C08.dir/ex05/ft_show_tab.c.o
+.PHONY : ex05/ft_show_tab.c.o
+
+ex05/ft_show_tab.i: ex05/ft_show_tab.c.i
+.PHONY : ex05/ft_show_tab.i
+
+# target to preprocess a source file
+ex05/ft_show_tab.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/C08.dir/build.make CMakeFiles/C08.dir/ex05/ft_show_tab.c.i
+.PHONY : ex05/ft_show_tab.c.i
+
+ex05/ft_show_tab.s: ex05/ft_show_tab.c.s
+.PHONY : ex05/ft_show_tab.s
+
+# target to generate assembly for a file
+ex05/ft_show_tab.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/C08.dir/build.make CMakeFiles/C08.dir/ex05/ft_show_tab.c.s
+.PHONY : ex05/ft_show_tab.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +189,9 @@ help:
 	@echo "... ex01/maintest.o"
 	@echo "... ex01/maintest.i"
 	@echo "... ex01/maintest.s"
+	@echo "... ex05/ft_show_tab.o"
+	@echo "... ex05/ft_show_tab.i"
+	@echo "... ex05/ft_show_tab.s"
 .PHONY : help
 
 

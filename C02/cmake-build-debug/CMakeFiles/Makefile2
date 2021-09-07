@@ -45,10 +45,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n000bgn4002vx9/T/AppTranslocation/F86E2541-69DC-44A1-959A-B0C74C181644/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n000bgn4002vx9/T/AppTranslocation/A5562112-DF92-425B-8F6B-C4E72490A400/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n000bgn4002vx9/T/AppTranslocation/F86E2541-69DC-44A1-959A-B0C74C181644/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n000bgn4002vx9/T/AppTranslocation/A5562112-DF92-425B-8F6B-C4E72490A400/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -81,12 +81,12 @@ clean: CMakeFiles/C02.dir/clean
 CMakeFiles/C02.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/C02.dir/build.make CMakeFiles/C02.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/C02.dir/build.make CMakeFiles/C02.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/tgriffit/projects/C02/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target C02"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/tgriffit/projects/C02/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target C02"
 .PHONY : CMakeFiles/C02.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/C02.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tgriffit/projects/C02/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tgriffit/projects/C02/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/C02.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tgriffit/projects/C02/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/C02.dir/rule

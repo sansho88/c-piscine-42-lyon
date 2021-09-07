@@ -78,10 +78,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/tgriffit/projects/C02/ex09/ft_strcapitalize.c">
-			<Option target="C02"/>
-		</Unit>
-		<Unit filename="/Users/tgriffit/projects/C02/ex11/ft_putstr_non_printable.c">
+		<Unit filename="/Users/tgriffit/projects/C02/ex10/ft_strlcpy.c">
 			<Option target="C02"/>
 		</Unit>
 		<Unit filename="/Users/tgriffit/projects/C02/CMakeLists.txt">
