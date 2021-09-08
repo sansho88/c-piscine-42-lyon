@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ft.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tgriffit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tgriffit <tgriffit@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/06 10:59:12 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/08/06 13:09:02 by tgriffit         ###   ########lyon.fr   */
+/*   Created: 2021/09/07 12:15:12 by tgriffit          #+#    #+#             */
+/*   Updated: 2021/09/07 12:15:12 by tgriffit         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
