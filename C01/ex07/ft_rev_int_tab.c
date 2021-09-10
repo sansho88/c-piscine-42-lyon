@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tgriffit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tgriffit <tgriffit@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/08 18:05:25 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/08/11 12:42:53 by tgriffit         ###   ########lyon.fr   */
+/*   Created: 2021/09/07 12:15:12 by tgriffit          #+#    #+#             */
+/*   Updated: 2021/09/07 12:15:12 by tgriffit         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 void	ft_swap(int *a, int *b)

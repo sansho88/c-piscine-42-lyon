@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_sort_int_tab.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tgriffit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tgriffit <tgriffit@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/08 19:15:15 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/08/11 21:15:03 by tgriffit         ###   ########lyon.fr   */
+/*   Created: 2021/09/07 12:15:13 by tgriffit          #+#    #+#             */
+/*   Updated: 2021/09/07 12:15:13 by tgriffit         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,14 @@ void	ft_sort_int_tab(int *tab, int size)
 	int	temp;			
 
 	i = 0;
-	while (i < size - 1 )
+	while (i < (size - 1))
 	{
 		if (tab[i] > tab[i + 1])
 		{
 			temp = tab[i];
 			tab[i] = tab[i + 1];
 			tab[i + 1] = temp;
-			i = 0;
+			i = -1;
 		}
 		i++;
 	}
