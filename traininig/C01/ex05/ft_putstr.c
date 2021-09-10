@@ -1,16 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate.c                                      :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgriffit <tgriffit@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/10 17:56:16 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/09/10 17:56:33 by tgriffit         ###   ########lyon.fr   */
+/*   Created: 2021/09/10 19:05:31 by tgriffit          #+#    #+#             */
+/*   Updated: 2021/09/10 19:05:31 by tgriffit         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_ultimate_ft(int *********nbr)
+int ft_strlen(char *str);
+
+void    ft_putstr(char *str)
 {
-    *********nbr = 42;
+    _write(1, str, ft_strlen(str));
 }

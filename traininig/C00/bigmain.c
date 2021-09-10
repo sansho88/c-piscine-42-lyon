@@ -6,7 +6,7 @@
 /*   By: tgriffit <tgriffit@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 12:41:42 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/09/08 12:23:10 by tgriffit         ###   ########lyon.fr   */
+/*   Updated: 2021/09/10 17:00:56 by tgriffit         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,17 @@ int main(void)
     ft_putchar('\n');
     ft_print_comb();
     ft_putchar('\n');
-    ft_putchar(ft_readfile() + '0');
+    //ft_putchar(ft_readfile() + '0');
+    _write(1, "___________________________\n", 28);
+   // ft_print_comb2(); Infinite Loop
     ft_putchar('\n');
+    ft_putnbr(42);
+    ft_putchar('\n');
+    ft_putnbr(-42);
+    ft_putchar('\n');
+    ft_puttnbr(INT_MAX);
+    ft_putchar('\n');
+    ft_puttnbr(INT_MIN);
+    ft_putchar('\n');
+
 }

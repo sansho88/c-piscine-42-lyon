@@ -1,16 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate.c                                      :+:      :+:    :+:   */
+/*   ft_div_mod.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgriffit <tgriffit@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/10 17:56:16 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/09/10 17:56:33 by tgriffit         ###   ########lyon.fr   */
+/*   Created: 2021/09/10 18:01:29 by tgriffit          #+#    #+#             */
+/*   Updated: 2021/09/10 18:01:29 by tgriffit         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_ultimate_ft(int *********nbr)
+void    ft_div_mod(int a, int b, int *div, int *mod)
 {
-    *********nbr = 42;
+    *div = a / b;
+    *mod = a % b;
 }
