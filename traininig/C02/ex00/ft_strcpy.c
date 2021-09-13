@@ -1,24 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   mylib.h                                            :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgriffit <tgriffit@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/07 12:44:20 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/09/13 13:51:06 by tgriffit         ###   ########lyon.fr   */
+/*   Created: 2021/09/13 14:50:35 by tgriffit          #+#    #+#             */
+/*   Updated: 2021/09/13 15:42:21 by tgriffit         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "mylib.h"
 
-#ifndef MYLIB_H
-#define MYLIB_H
-# include "unistd.h"
-/*Ne pas oublier d'update les fichiers sources dans le CMakeList.txt */
-void    ft_putchar(char c);
-void    ft_putnbr(int nb);
-int     ft_strlen(char *str);
-void    ft_putstr(char *str);
-void    ft_swap(int *a, int *b);
+char	*ft_strcpy(char *dest, char *src)
+{
+    int	i;
 
-#endif //PROJECTS_MYLIB_H
+    i = 0;
+    while (src[i])
+        dest[i] = src[i++];
+    dest[i] = 0;
+    return dest;
+}

@@ -6,13 +6,12 @@
 /*   By: tgriffit <tgriffit@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 16:52:23 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/09/10 17:06:15 by tgriffit         ###   ########lyon.fr   */
+/*   Updated: 2021/09/13 13:44:44 by tgriffit         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <limits.h>
-
-void ft_putchar(char c);
+#include "mylib.h"
 
 void ft_putnbr(int nb)
 {
