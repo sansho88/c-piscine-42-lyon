@@ -50,4 +50,13 @@ void    ft_putstr(char *str)
     _write(1, str, ft_strlen(str));
 }
 
+void ft_swap(int *a, int *b)
+{
+    int temp;
+
+    temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
 #endif //PROJECTS_MYLIB_H
