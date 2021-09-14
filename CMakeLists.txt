@@ -39,4 +39,4 @@ add_executable(projects
 #        traininig/C00/ex05/ft_print_comb.c
 #        traininig/concepts/readfile.c traininig/C00/ex06/ft_print_comb2.c traininig/C01/ex03/ft_div_mod.c traininig/C01/ex04/ft_ultimate_div_mod.c
 #
-        )
+        traininig/C02/ex09/ft_strcapitalize.c traininig/C02/ex10/ft_strlcpy.c)

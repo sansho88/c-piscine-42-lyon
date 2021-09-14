@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char *str);
+#include "mylib.h"
 
 void    ft_putstr(char *str)
 {
