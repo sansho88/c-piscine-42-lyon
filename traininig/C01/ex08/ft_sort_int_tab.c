@@ -29,6 +29,7 @@ void    ft_sort_int_tab(int *tab, int size)
     }
 }
 
+/*
 int main()
 {
     int tab[] = {5, 9, 8, 45, -9, 48, 56, 5};
@@ -41,4 +42,4 @@ int main()
         ft_putchar(' ');
         i++;
     }
-}
+}*/

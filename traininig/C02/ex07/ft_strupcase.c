@@ -1,42 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_strupcase.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgriffit <tgriffit@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/13 15:44:12 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/09/13 16:08:51 by tgriffit         ###   ########lyon.fr   */
+/*   Created: 2021/09/14 12:26:09 by tgriffit          #+#    #+#             */
+/*   Updated: 2021/09/14 12:54:18 by tgriffit         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "mylib.h"
 
-char	*ft_strncpy(char *dest, char *src, unsigned int n)
+char	*ft_strupcase(char *str)
 {
-	int	i;
+	int i;
 
 	i = 0;
-	while (src[i] && i < n)
-		dest[i] = src[i++];
-	while (i < n)
-		dest[i++] = 0;
-	return dest;
+	while (str[i])
+	{
+		if (str[i] >= 'a' && str[i] <= 'z')
+			str[i] -= 32;
+		i++;
+	}
+	return str;
 }
 
 
-/*
-
-#include <string.h>
-#include <stdio.h>
-int main() {
-	char dest[10];
-	char dest1[10];
-	char src[] = "salut";
-	int size = 5;
-
-	printf("dest  ====> %s\n", ft_strncpy(dest, src, size));
-	printf("      ====> %s\n", strncpy(dest1, src, size));
-
-	return 0;
+/*int main()
+{
+	ft_putstr(ft_strupcase("Un chocapic danse avec un nesquick sur un zebre."));
+	ft_putstr(ft_strupcase("http://twitter.com/42Lyon/status/1437718173659324416"));
 }*/
