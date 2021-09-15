@@ -6,31 +6,11 @@
 /*   By: tgriffit <tgriffit@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/14 17:03:53 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/09/14 18:29:06 by tgriffit         ###   ########lyon.fr   */
+/*   Updated: 2021/09/15 16:28:59 by tgriffit         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include "mylib.h"
-
-int ft_strlen(char *str)
-{
-	int i;
-
-	i = 0;
-	while(str[i])
-		i++;
-	return (i);
-}
-char	*ft_strcpy(char *dest, char *src)
-{
-	int	i;
-
-	i = 0;
-	while (src[i])
-		dest[i] = src[i++];
-	dest[i] = 0;
-	return dest;
-}
 
 unsigned int ft_strlcpy(char *dest, char *src, unsigned int size)
 {
@@ -50,6 +30,7 @@ unsigned int ft_strlcpy(char *dest, char *src, unsigned int size)
 }
 
 
+/*
 #include <bsd/string.h> // https://github.com/xdp-project/xdp-tools/issues/1
 #include <stdio.h>
 int main(void)
@@ -68,4 +49,4 @@ int main(void)
 	printf("%d\n", res1);
 
 	return (0);
-}
+}*/

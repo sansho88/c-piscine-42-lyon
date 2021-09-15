@@ -25,6 +25,13 @@ add_executable(projects
         traininig/C02/ex06/ft_str_is_printable.c
         traininig/C02/ex07/ft_strupcase.c
         traininig/C02/ex08/ft_strlowcase.c
+        traininig/C02/ex09/ft_strcapitalize.c
+        traininig/C02/ex10/ft_strlcpy.c
+        traininig/C02/ex11/ft_putstr_non_printable.c
+        traininig/C03/ex00/ft_strcmp.c
+        traininig/C03/ex01/ft_strncmp.c
+        traininig/C03/ex02/ft_strcat.c
+        traininig/C03/ex03/ft_strncat.c
 
         ## BIG MAIN ##
 #        traininig/unistd.h
@@ -39,4 +46,4 @@ add_executable(projects
 #        traininig/C00/ex05/ft_print_comb.c
 #        traininig/concepts/readfile.c traininig/C00/ex06/ft_print_comb2.c traininig/C01/ex03/ft_div_mod.c traininig/C01/ex04/ft_ultimate_div_mod.c
 #
-        traininig/C02/ex09/ft_strcapitalize.c traininig/C02/ex10/ft_strlcpy.c)
+        traininig/C03/ex04/ft_strstr.c)
