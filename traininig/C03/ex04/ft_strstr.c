@@ -33,10 +33,11 @@ char	*ft_strstr(char *str, char *to_find)
 	return (str);
 }
 
+/*
 int main (void)
 {
 	char *phrase = "Un chocapic et un nesquick se baladent ensemble.";
 	char *tofind = "un";
 
 	ft_putstr(ft_strstr(phrase, tofind));
-}
+}*/
