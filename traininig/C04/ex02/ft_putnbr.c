@@ -15,6 +15,7 @@
 
 void ft_putnbr(int nb)
 {
+	unsigned int	temp;
     if (nb == INT_MIN) {
         _write(1, "-2147483648", 12);
         return ;

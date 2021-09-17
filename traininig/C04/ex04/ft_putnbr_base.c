@@ -6,31 +6,57 @@
 /*   By: tgriffit <tgriffit@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 12:43:20 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/09/16 14:01:14 by tgriffit         ###   ########lyon.fr   */
+/*   Updated: 2021/09/17 14:46:00 by tgriffit         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "mylib.h"
 
-/*NOT FINISHED AT ALL */
-void	ft_putnbr_base(int nb, char *base)
+int ft_check_base(char *base)
 {
-	if (nb == INT_MIN) {
-		_write(1, "-2147483648", 12);
-		return ;
+	int		i;
+	int		j;
+	char	c;
+
+	i = 0;
+	if (!base || ft_strlen(base) <= 1)
+		return (0);
+	while (base[i])
+	{
+		c = base[i];
+		if (!(c >= '0' && c <= '9') && (!(c >= 'a' && c <= 'z')
+				&& !(c >= 'A' && c <= 'Z')))
+			return (0);
+		j = i++;
+		while (base[++j])
+			if (c == base[j])
+				return (0);
 	}
-	if (nb < 0) {
-		ft_putchar('-');
-		nb *= -1;
-	}
-	if (nb > 9)
-		ft_putnbr(nb / ft_strlen(base));
-	nb %= ft_strlen(base);
-	ft_putchar(nb + '0');
-	//ft_putstr(&base[nb % ft_strlen(base)]);
+	return (1);
 }
 
-int main (void)
+void ft_putnbr_base(int nb, char *base)
+{
+	unsigned int	temp;
+	unsigned int	size;
+
+	temp = nb;
+	size = ft_strlen(base);
+	if (ft_check_base(base))
+	{
+		if (nb < 0)
+		{
+			ft_putchar('-');
+			temp = -nb;
+		}
+		if (temp > size - 1)
+			ft_putnbr_base(temp / size, base);
+		temp %= size;
+		ft_putchar(base[temp]);
+	}
+}
+
+int main(void)
 {
 	int max = 2147483647;
 	int min = -2147483648;
@@ -44,18 +70,18 @@ int main (void)
 	ft_putchar('\n');
 	ft_putnbr_base(42, "0123456789abcdef");
 	ft_putchar('\n');
-	ft_putnbr_base(42, "01234567");
+	ft_putnbr_base(88, "01234567");
 	ft_putchar('\n');
 	ft_putnbr_base(max, "0123456789abcdef");
 	ft_putchar('\n');
 	ft_putnbr_base(min, "0123456789abcdef");
 	ft_putchar('\n');
-	ft_putnbr_base(0, "0123456789");
+	ft_putnbr_base(max, "poneyvif");
 	ft_putchar('\n');
-	//ft_putnbr_base(max, "");
-//	ft_putchar('\n');
-	//ft_putnbr_base(max, "a");
-	//ft_putchar('\n');
+	ft_putnbr_base(5, "");
+	ft_putchar('\n');
+	ft_putnbr_base(max, "a");
+	ft_putchar('\n');
 	ft_putnbr_base(10, "abb");
 	ft_putchar('\n');
 	ft_putnbr_base(428, "-012345678cd ..	9");
