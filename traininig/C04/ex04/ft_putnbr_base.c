@@ -6,7 +6,7 @@
 /*   By: tgriffit <tgriffit@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 12:43:20 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/09/17 14:46:00 by tgriffit         ###   ########lyon.fr   */
+/*   Updated: 2021/09/17 14:50:45 by tgriffit         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,7 @@ void ft_putnbr_base(int nb, char *base)
 	}
 }
 
+/*
 int main(void)
 {
 	int max = 2147483647;
@@ -87,4 +88,4 @@ int main(void)
 	ft_putnbr_base(428, "-012345678cd ..	9");
 	ft_putchar('\n');
 
-}
+}*/

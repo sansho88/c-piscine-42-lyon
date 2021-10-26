@@ -6,7 +6,7 @@
 /*   By: tgriffit <tgriffit@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 12:44:20 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/09/15 18:01:51 by tgriffit         ###   ########lyon.fr   */
+/*   Updated: 2021/10/25 15:16:47 by tgriffit         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #ifndef MYLIB_H
 #define MYLIB_H
 # include "unistd.h"
+
 /*Ne pas oublier d'update les fichiers sources dans le CMakeList.txt */
 void  		 	ft_putchar(char c);
 void   			ft_putnbr(int nb);
@@ -38,6 +39,12 @@ char			*ft_strcat(char *dest, char *src);
 char			*ft_strncat(char *dest, char *src, unsigned int nb);
 char			*ft_strstr(char *str, char *to_find);
 int				ft_atoi(char *str);
+void			ft_putnbr_base(int nb, char *base);
+int				ft_is_prime(int nb);
+int 			ft_find_next_prime(int nb);
+char 			*ft_strdup(char *src);
+int				*ft_range(int min, int max);
 
-
+#define COMP(a,b) ft_putstr("\nDiff: "); ft_putnbr(ft_strcmp(a,b)); ft_putchar \
+('\n')
 #endif //MYLIB_H
