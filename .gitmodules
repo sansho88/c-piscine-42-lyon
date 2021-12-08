@@ -1,0 +1,3 @@
+[submodule "GNLgit"]
+	path = GNLgit
+	url = ./GNLgit
