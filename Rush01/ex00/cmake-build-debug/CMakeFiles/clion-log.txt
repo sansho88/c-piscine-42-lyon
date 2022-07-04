@@ -1,0 +1,13 @@
+/private/var/folders/zz/zyxvpxvq6csfxvn_n000bgn4002vx9/T/AppTranslocation/2DA430EF-697A-4AEB-9246-8F45D5CCADF7/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /Users/tgriffit/projects/Rush01/ex00
+-- Configuring done
+CMake Error at CMakeLists.txt:6 (add_executable):
+  Cannot find source file:
+
+    brain.c
+
+
+CMake Error at CMakeLists.txt:6 (add_executable):
+  No SOURCES given to target: ex00
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.

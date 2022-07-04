@@ -1,0 +1,5 @@
+Credentials cache: API:8B216159-2863-4DF4-8947-624735FE7084
+        Principal: tgriffit@42LYON.FR
+
+  Issued                Expires               Principal
+Aug  2 15:08:09 2021  Aug  3 15:08:09 2021  krbtgt/42LYON.FR@42LYON.FR

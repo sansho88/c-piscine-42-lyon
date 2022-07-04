@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/tgriffit/projects/C02/ex10/ft_strlcpy.c
+printf.h
+/Users/tgriffit/projects/C02/ex10/printf.h
+
