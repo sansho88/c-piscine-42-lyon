@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tgriffit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tgriffit <tgriffit@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/08 14:23:12 by tgriffit          #+#    #+#             */
-/*   Updated: 2021/08/09 13:35:48 by tgriffit         ###   ########lyon.fr   */
+/*   Created: 2021/09/07 12:15:12 by tgriffit          #+#    #+#             */
+/*   Updated: 2021/09/07 12:15:12 by tgriffit         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
