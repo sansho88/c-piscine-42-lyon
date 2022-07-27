@@ -1,5 +1,7 @@
 # c-piscine-42-lyon
-My personnal github for piscine 42 august 2021
+My personnal github for pool 42 august 2021
+
+This repo is just an archive for myself. A lot of functions has been correctly coded in my libft project since.
 
 Shell 00:   [![tgriffit's 42 C Piscine Shell 00 Score](https://badge42.vercel.app/api/v2/cl63gaio2003009mjiju21uh0/project/2270621)](https://github.com/JaeSeoKim/badge42)
 
